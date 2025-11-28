@@ -1,7 +1,8 @@
-package com.hotelbooking.hotelreservationsystem;
+package com.hotelbooking.hotelreservationsystem.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.util.List;
 
 @Entity
@@ -16,5 +17,5 @@ public class Hotel {
     private String address;
 
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Room> rooms; 
+    private List<Room> rooms;
 }

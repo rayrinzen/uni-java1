@@ -1,4 +1,4 @@
-package com.hotelbooking.hotelreservationsystem;
+package com.hotelbooking.hotelreservationsystem.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

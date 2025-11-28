@@ -1,4 +1,4 @@
-package com.hotelbooking.hotelreservationsystem;
+package com.hotelbooking.hotelreservationsystem.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -14,10 +14,7 @@ public class Room {
     private String roomNumber;
     private int capacity; 
     private double pricePerNight;
-    private boolean isAvailable;
-
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "hotel_id") 
     private Hotel hotel;
 }
